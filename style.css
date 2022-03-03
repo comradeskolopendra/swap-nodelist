@@ -1,0 +1,474 @@
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    max-width: 720px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.header__lang {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #2B5DA8;
+    font-weight: bold;
+    background-color: white;
+    filter: drop-shadow(0px 5px 20px rgba(43, 93, 168, 0.2));
+    margin-lefT: 15px;
+    margin-right: 15px;
+}
+
+.main {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.arrow {
+    margin-lefT: 15px;
+    margin-right: 15px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.main__paragraph {
+    margin: 0;
+    font-size: 13px;
+    color: #9A9A9A;
+    max-width:250px;
+    margin-right: 25px;
+}
+
+.input {
+    font-family: "Calibri", sans-serif;
+    width: 260px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 1px solid #c4c5c5;
+    outline: none;
+    margin-top: 0px;
+}
+
+.container__password_input {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.password-eye {
+    position: absolute;
+    top: 35%;
+    right: 5%
+}
+
+.eye__path path {
+    fill: #2B5DA8
+}
+
+.input__err {
+    border-color: #FF0000;
+}
+
+.input__acs {
+    border-color: green;
+}
+
+.input__reset_password {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+    outline: none;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.input:hover, .input:focus {
+    font-family: "Calibri", sans-serif;
+    border: 1px solid #FFCD17;
+}
+
+.input__reset_password:hover, .input__reset_password:focus {
+    font-family: "Calibri", sans-serif;
+    border: 1px solid #FFCD17;
+}
+
+.input_type_tel {
+    font-family: "Calibri", sans-serif;
+    margin-bottom: 10px;
+}
+
+.button-yellow {
+    background: #FECC00;
+    -webkit-box-shadow: 0px 10px 30px rgba(254, 204, 0, 0.4);
+            box-shadow: 0px 10px 30px rgba(254, 204, 0, 0.4);
+    border: none;
+    width: 300px;
+    height: 45px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.button-yellow[disabled] {
+    opacity: 0.5;
+}
+
+.button-yellow:hover {
+    background: #F0C100;
+    -webkit-box-shadow: 0px 10px 20px rgba(254, 204, 0, 0.2);
+            box-shadow: 0px 10px 20px rgba(254, 204, 0, 0.2);
+}
+.button-yellow:active {
+    background-color: #F0AD00;
+}
+
+.button-white {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(43, 93, 168, 0.2);
+    border-radius: 25px;
+    border: none;
+    width: 300px;
+    height: 45px;
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+.button-white:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.text__login {
+    font-size: 13px;
+}
+
+.container__back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.paragraph__forgot {
+    font-size: 13px;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 25px;
+    margin-left: 185px;
+    cursor: pointer;
+}
+
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__accordion {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.container__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 300px;
+    max-height: 0;
+    opacity: 0;
+    transition: all .1s ease-in .3s;
+}
+
+.container__social.animate {
+    opacity: 1;
+    max-height: 100%;
+}
+
+.image__arrow {
+    margin-left: 10px;
+    margin-top: 3px;
+    width: 9px;
+    height: 38px;
+}
+
+.arrow__back {
+    margin-right: 5px;
+}
+
+.social_img {
+    width: 35px;
+    height: 35px;
+}
+
+.button_back {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+}
+
+.opacity__zero {
+    opacity: 0;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 18px;
+}
+
+input[type="checkbox"]::before {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80%;
+    position: static;
+}
+
+.form-item-codes {
+    margin-bottom: 30px;
+    width: 275px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input_type_code {
+    margin-bottom: 0;
+}
+
+.input_type_newpassword {
+    margin-bottom: 20px;
+}
+
+.input_type_renewpassword {
+    margin-bottom: 30px;
+}
+
+.button_back:hover {
+    color: white;
+}
+
+.send-sms-code {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.section__align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.display__none {
+    display: none;
+}
+
+.grey__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    background: #E7E7E7;
+    border-radius: 25px;
+    width: 310px;
+    height: 50px;
+    border: none;
+}
+
+.border__right {
+    border: 1px solid grey;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.bold__text {
+    font-weight: bold;
+}
+
+.input__changePassword {
+    margin: 0;
+}
+
+.container__inputs {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input__margin {
+    margin-top: 25px;
+}
+
+.container__over18 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 300px;
+}
+
+label {
+    max-width: 66%;
+    margin: 0;
+    color: #9A9A9A;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 15px;
+
+}
+
+span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span:hover {
+    color: #2B5DA8;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: #2B5DA8;
+    }
+    .container--main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100vw;
+    }
+
+    .main {
+        background-color: white;
+        max-width: 390px;
+        min-width: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding-bottom: 25px;
+    }
+
+    .main__paragraph {
+        font-size: 15px;
+        max-width: 250px;
+    }
+
+    .header {
+        height: 120px!important;
+        min-width: 100vw;
+    }
+
+    .header__lang {
+        margin-right: 50px;
+        background-color: white;
+    }
+
+    .button_back {
+        margin-left: 50px
+    }
+
+    .logo__sz .logo__path {
+        fill: white
+    }
+
+    .logo__sz {
+        height: 75px;
+        width: 100px;
+    }
+
+    input[type="checkbox"] {
+        display: flex;
+        justify-content: center;
+        width: 45px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]::before {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 80%;
+        position: static;
+    }
+
+    .form-item-codes {
+        margin-bottom: 30px;
+    }
+
+    .input_type_code {
+        margin-bottom: 0;
+    }
+
+    .input_type_newpassword {
+        margin-bottom: 20px;
+    }
+
+    .input_type_renewpassword {
+        margin-bottom: 30px;
+    }
+
+    .send-sms-code {
+        max-width: 300px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+/* ANIMATIONS */
+
+.animation__arrow {
+    transition: all 0.3s linear 0s;
+}
+
+.arrow__animate {
+    transform: rotate(180deg);
+}
