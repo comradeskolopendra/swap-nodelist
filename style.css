@@ -366,7 +366,28 @@ label {
 
 }
 
-span {
+.grey__button span {
+    text-decoration: none;
+    cursor: auto;
+}
+
+.grey__button span:hover {
+    color: black;
+}
+
+.container__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__email label {
+    max-width: 100%;
+    margin-top: -5px;
+}
+
+label span {
     text-decoration: underline;
     cursor: pointer;
 }
